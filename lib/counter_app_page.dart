@@ -24,6 +24,7 @@ class CounterAppPage extends StatelessWidget {
               // Gender Section
               Row(
                 children: [
+                  // Male container
                   Expanded(
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.20,
@@ -32,11 +33,17 @@ class CounterAppPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.shade300,
                       ),
+                      child: Icon(
+                        Icons.male,
+                        size: 100,
+                        color: Colors.blue.shade100,
+                      ),
                     ),
                   ),
 
                   SizedBox(width: 15),
 
+                  // Female container
                   Expanded(
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.20,
