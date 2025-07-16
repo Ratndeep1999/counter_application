@@ -10,13 +10,24 @@ class CounterAppPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.menu),
-          centerTitle: true,
-          title: Text("Counter App", style: TextStyle(),),
+        centerTitle: true,
+        title: Text("Counter App", style: TextStyle()),
         backgroundColor: Colors.orange.shade100,
       ),
       body: SafeArea(
         child: Column(
-          children: [ ],
+          children: [
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                ),
+                Container(),
+              ],
+            ),
+          ],
         ),
       ),
     );
