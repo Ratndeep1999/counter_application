@@ -33,10 +33,23 @@ class CounterAppPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.shade300,
                       ),
-                      child: Icon(
-                        Icons.male,
-                        size: 100,
-                        color: Colors.blue.shade100,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.male,
+                            size: 100,
+                            color: Colors.blue.shade100,
+                          ),
+                          Text(
+                            "Male",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -52,10 +65,23 @@ class CounterAppPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey.shade300,
                       ),
-                      child: Icon(
-                        Icons.female,
-                        size: 100,
-                        color: Colors.pink.shade100,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.female,
+                            size: 100,
+                            color: Colors.pink.shade100,
+                          ),
+                          Text(
+                            "Female",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
