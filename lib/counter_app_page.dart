@@ -20,8 +20,11 @@ class CounterAppPage extends StatelessWidget {
             Row(
               children: [
                 Container(
+                  height: MediaQuery.of(context).size.height ,
+                  width: MediaQuery.of(context).size.width ,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
+                    color: Colors.grey
                   ),
                 ),
                 Container(),
