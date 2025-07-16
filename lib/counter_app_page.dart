@@ -40,6 +40,35 @@ class CounterAppPage extends StatelessWidget {
                 ),
               ),
             ),
+
+            SizedBox(height: 50),
+
+            Row(
+              children: [
+                // plus button
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.09,
+                  width: MediaQuery.of(context).size.height * 0.09,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Colors.red,
+                  ),
+                  child: Icon(Icons.add, size: 50),
+                ),
+
+                // minus button
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.09,
+                  width: MediaQuery.of(context).size.height * 0.09,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Colors.red,
+                  ),
+                  child: Icon(Icons.remove, size: 50),
+                ),
+
+              ],
+            ),
           ],
         ),
       ),
