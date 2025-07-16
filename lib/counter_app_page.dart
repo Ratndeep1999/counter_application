@@ -14,6 +14,7 @@ class CounterAppPage extends StatelessWidget {
           title: Text("Counter App", style: TextStyle(),),
         backgroundColor: Colors.orange.shade100,
       ),
+      body: SafeArea(child: Column()),
     );
   }
 }
