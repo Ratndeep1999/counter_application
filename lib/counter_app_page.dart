@@ -9,6 +9,7 @@ class CounterAppPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(Icons.menu),
           centerTitle: true,
           title: Text("Counter App", style: TextStyle(),),
         backgroundColor: Colors.orange.shade100,
