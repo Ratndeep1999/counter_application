@@ -7,6 +7,12 @@ class CounterAppPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+          centerTitle: true,
+          title: Text("Counter App", style: TextStyle(),),
+        backgroundColor: Colors.orange.shade100,
+      ),
+    );
   }
 }
