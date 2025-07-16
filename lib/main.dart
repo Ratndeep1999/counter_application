@@ -1,10 +1,9 @@
-
-
-
 import 'package:flutter/material.dart';
 
+import 'counter_app_page.dart';
+
 void main() {
-   runApp(const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,9 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.white,),),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+      ),
       debugShowCheckedModeBanner: false,
-      // home: ,
+      home: CounterAppPage(),
     );
   }
 }
