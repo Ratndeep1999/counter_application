@@ -11,7 +11,9 @@ class CounterAppPage extends StatelessWidget {
       appBar: AppBar(
         leading: Icon(Icons.menu),
         centerTitle: true,
-        title: Text("Counter App"),),
+        title: Text("Counter App"),
+        backgroundColor: Colors.grey,
+      ),
     );
   }
 }
