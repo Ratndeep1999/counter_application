@@ -12,6 +12,6 @@ class CounterAppPage extends StatelessWidget {
         leading: Icon(Icons.menu),
         centerTitle: true,
         title: Text("Counter App"),),
-    )
+    );
   }
 }
