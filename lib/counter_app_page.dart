@@ -23,7 +23,7 @@ class CounterAppPage extends StatelessWidget {
 
             // Display Number
             Container(
-              height: MediaQuery.of(context).size.height * 0.25,
+              height: MediaQuery.of(context).size.height * 0.3,
               width: MediaQuery.of(context).size.width * 0.5,
               decoration: BoxDecoration(
                 color: Colors.grey.shade400,
