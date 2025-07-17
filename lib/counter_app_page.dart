@@ -2,8 +2,19 @@
 
 import 'package:flutter/material.dart';
 
-class CounterAppPage extends StatelessWidget {
+
+class CounterAppPage extends StatefulWidget {
   const CounterAppPage({super.key});
+
+  @override
+  State<CounterAppPage> createState() => _CounterAppPageState();
+
+}
+
+class _CounterAppPageState extends State<CounterAppPage> {
+
+  int result = 0 ;
+
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +23,7 @@ class CounterAppPage extends StatelessWidget {
       appBar: AppBar(
         leading: Icon(Icons.menu),
         centerTitle: true,
-        title: Text("Counter App"),
+        title: const Text("Counter App"),
         backgroundColor: Colors.grey,
       ),
       backgroundColor: Colors.grey.shade200,
@@ -31,7 +42,7 @@ class CounterAppPage extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  "0",
+                  "$result",    // result value
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 150,
@@ -43,18 +54,25 @@ class CounterAppPage extends StatelessWidget {
 
             SizedBox(height: 80),
 
+            // Row for plus and minus button
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+
                 // plus button
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.09,
-                  width: MediaQuery.of(context).size.height * 0.09,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Colors.red,
+                InkWell(
+                  onTap: (){
+
+                  },
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.09,
+                    width: MediaQuery.of(context).size.height * 0.09,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.red,
+                    ),
+                    child: Icon(Icons.add, size: 50),
                   ),
-                  child: Icon(Icons.add, size: 50),
                 ),
 
                 // minus button
@@ -67,6 +85,7 @@ class CounterAppPage extends StatelessWidget {
                   ),
                   child: Icon(Icons.remove, size: 50),
                 ),
+
               ],
             ),
 
