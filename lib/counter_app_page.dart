@@ -6,7 +6,9 @@ class CounterAppPage extends StatefulWidget {
   const CounterAppPage({super.key});
 
   @override
-  State<CounterAppPage> createState() => _CounterAppPageState();
+  State<CounterAppPage> createState() {
+    return _CounterAppPageState();
+  }
 }
 
 class _CounterAppPageState extends State<CounterAppPage> {
