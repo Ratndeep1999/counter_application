@@ -45,8 +45,8 @@ class _CounterAppPageState extends State<CounterAppPage> {
                   "$result",    // result value
                   style: TextStyle(
                     color: Colors.grey,
-                    fontSize: 150,
-                    fontWeight: FontWeight.w600,
+                    fontSize: 120,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
@@ -63,6 +63,11 @@ class _CounterAppPageState extends State<CounterAppPage> {
                 InkWell(
                   onTap: (){
 
+                    // it increase result by 1
+                    result = result + 1 ;
+                    setState(() {
+                      // result++ ;
+                    });
                   },
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.09,
@@ -76,14 +81,24 @@ class _CounterAppPageState extends State<CounterAppPage> {
                 ),
 
                 // minus button
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.09,
-                  width: MediaQuery.of(context).size.height * 0.09,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Colors.red,
+                InkWell(
+                  onTap: () {
+
+                    // it decrease result by 1
+                    result = result - 1 ;
+                    setState(() {
+                      // result-- ;
+                    });
+                  },
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.09,
+                    width: MediaQuery.of(context).size.height * 0.09,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.red,
+                    ),
+                    child: Icon(Icons.remove, size: 50),
                   ),
-                  child: Icon(Icons.remove, size: 50),
                 ),
 
               ],
