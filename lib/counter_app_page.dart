@@ -41,9 +41,10 @@ class CounterAppPage extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 50),
+            SizedBox(height: 80),
 
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 // plus button
                 Container(
@@ -66,8 +67,24 @@ class CounterAppPage extends StatelessWidget {
                   ),
                   child: Icon(Icons.remove, size: 50),
                 ),
-
               ],
+            ),
+
+            SizedBox(height: 80),
+
+            // Reset button
+            Container(
+              height: MediaQuery.of(context).size.height * 0.08,
+              width: MediaQuery.of(context).size.width * 0.5,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Center(child: Text("Reset", style: TextStyle(
+                fontSize: 30,
+              ),
+              ),
+              ),
             ),
           ],
         ),
